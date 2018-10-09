@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Digite um valor: <input type="number" id="valor"> <br>
+
+    <button onclick="testar()">Testar</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+    
+  
+
+     function  testar(){
+        var valor = parseFloat(document.getElementById("valor").value);
+        var msg;
+
+        msg = dobro(valor);
+
+        document.getElementById("resultado").innerHTML = msg;
+          
+     }
+
+     function dobro(valor){
+         return valor * 2;
+     }
+    
+    
+    </script>
+</body>
+</html>
