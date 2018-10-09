@@ -9,7 +9,9 @@
 <body>
     Digite um valor: <input type="number" id="valor"> <br>
 
-    <button onclick="testar()">Testar</button>
+    <button onclick="testar()">Dobro</button>
+    <button onclick="testar3()">Triplo</button>
+    <button onclick="testarmet()">Metade</button>
 
     <p id="resultado"></p>
 
@@ -31,7 +33,34 @@
      function dobro(valor){
          return valor * 2;
      }
+
+      function  testar3(){
+        var valor = parseFloat(document.getElementById("valor").value);
+        var msg;
+
+        msg = triplo(valor);
+
+        document.getElementById("resultado").innerHTML = msg;
+          
+     }
+
+     function triplo(valor){
+         return valor * 3;
+     }
     
+     function  testarmet(){
+        var valor = parseFloat(document.getElementById("valor").value);
+        var msg;
+
+        msg = metade(valor);
+
+        document.getElementById("resultado").innerHTML = msg;
+          
+     }
+
+     function metade(valor){
+         return valor / 2;
+     }
     
     </script>
 </body>
